@@ -50,11 +50,12 @@ class AdvancedFilterQueryForm(CleanWhiteSpacesMixin, forms.Form):
     OPERATORS = (
         ("iexact", _("Equals")),
         ("icontains", _("Contains")),
-        ("iregex", _("One of")),
-        ("range", _("DateTime Range")),
-        ("isnull", _("Is NULL")),
-        ("istrue", _("Is TRUE")),
-        ("isfalse", _("Is FALSE")),
+        # Don't show this choices in Admin
+        # ("iregex", _("One of")),
+        # ("range", _("DateTime Range")),
+        # ("isnull", _("Is NULL")),
+        # ("istrue", _("Is TRUE")),
+        # ("isfalse", _("Is FALSE")),
         ("lt", _("Less Than")),
         ("gt", _("Greater Than")),
         ("lte", _("Less Than or Equal To")),
